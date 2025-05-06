@@ -1,10 +1,11 @@
+import { useEffect } from "react";
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ThemeProvider } from "@/components/ui/theme-provider";
-import { Provider } from "react-redux";
+import { Provider, useDispatch } from "react-redux";
 import { store } from "./store";
 import Layout from "./components/layout/Layout";
 import Home from "./pages/Home";
@@ -15,6 +16,23 @@ import Contact from "./pages/Contact";
 import Admin from "./pages/Admin";
 import NotFound from "./pages/NotFound";
 import "./i18n";
+import i18n from "@/i18n";
+import { setLanguage } from "@/store/languageSlice";
+
+const LanguageInitializer = () => {
+  const dispatch = useDispatch();
+  useEffect(() => {
+    const savedLang = localStorage.getItem("language") as "ar" | "en" | null;
+    if (savedLang) {
+      dispatch(setLanguage(savedLang));
+      i18n.changeLanguage(savedLang);
+      document.documentElement.dir = savedLang === "ar" ? "rtl" : "ltr";
+      document.documentElement.lang = savedLang;
+    }
+  }, [dispatch]);
+
+  return null;
+};
 
 const queryClient = new QueryClient();
 
@@ -27,6 +45,7 @@ const App = () => {
             <Toaster />
             <Sonner />
             <BrowserRouter>
+              <LanguageInitializer />
               <Routes>
                 <Route path="/" element={<Layout />}>
                   <Route index element={<Home />} />

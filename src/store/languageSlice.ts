@@ -9,7 +9,7 @@ interface LanguageState {
 
 const initialState: LanguageState = {
   current: "ar",
-  direction: "rtl",
+  direction: "ltr",
 };
 
 const languageSlice = createSlice({

@@ -15,6 +15,7 @@ const LanguageToggle = () => {
     i18n.changeLanguage(newLang);
     document.documentElement.dir = newLang === "ar" ? "rtl" : "ltr";
     document.documentElement.lang = newLang;
+    localStorage.setItem("language", newLang); // ✅ حفظ اللغة هنا
   };
 
   const isArabic = current === "ar";

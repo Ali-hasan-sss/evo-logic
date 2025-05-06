@@ -110,8 +110,6 @@ const Navbar = () => {
           </div>
 
           <div className="flex md:hidden items-center space-x-2 rtl:space-x-reverse">
-            <GlobalSearch />
-            <LanguageToggle />
             <Button variant="outline" size="icon" onClick={toggleDarkMode}>
               {isDarkMode ? (
                 <Sun className="h-4 w-4" />
@@ -148,6 +146,8 @@ const Navbar = () => {
                 {link.name}
               </Link>
             ))}
+            <GlobalSearch />
+            <LanguageToggle />
             <Button
               onClick={() => {
                 handleContactClick();
