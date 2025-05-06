@@ -1,0 +1,119 @@
+{
+  "navbar": {
+    "home": "Home",
+    "services": "Services",
+    "courses": "Courses",
+    "aboutUs": "About Us",
+    "contact": "Contact",
+    "getInTouch": "Get in Touch",
+    "searchServices": "Search services..."
+  },
+  "toast": {
+    "contactUs": "Contact Us",
+    "contactDescription": "Thanks for your interest! Navigate to our Contact page for more information."
+  },
+  "language": {
+    "english": "English",
+    "arabic": "Arabic"
+  },
+  "home": {
+    "hero": {
+      "title": "Innovative Digital Solutions for Your Business",
+      "description": "We specialize in crafting exceptional websites, mobile applications, and providing comprehensive tech education.",
+      "buttons": {
+        "services": "Our Services",
+        "contact": "Contact Us"
+      }
+    },
+    "services": {
+      "title": "Our Services",
+      "description": "We provide end-to-end digital solutions to help your business thrive in the digital landscape."
+    },
+    "featuredCourses": {
+      "title": "Featured Courses",
+      "description": "Expand your skillset with our industry-leading tech education programs.",
+      "viewAll": "View All Courses"
+    },
+    "testimonials": {
+      "title": "What Our Clients Say",
+      "description": "Don't just take our word for it. Here's what our clients have to say about working with us."
+    },
+    "cta": {
+      "title": "Ready to Transform Your Digital Presence?",
+      "description": "Let's discuss how we can help your business grow with our innovative solutions.",
+      "button": "Get Started Today"
+    }
+  },
+  "courses": {
+    "hero": {
+      "title": "Our Courses",
+      "description": "Expand your skillset with our comprehensive tech education programs."
+    },
+    "cta": {
+      "title": "Start Your Learning Journey Today",
+      "description": "Enroll in one of our courses and take your skills to the next level.",
+      "button": "Contact Us to Enroll"
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "Contact Us",
+      "description": "Have a question or want to work with us? Get in touch with our team."
+    },
+    "form": {
+      "title": "Send Us a Message",
+      "name": "Name",
+      "email": "Email",
+      "subject": "Subject",
+      "message": "Message",
+      "placeholder": {
+        "name": "Your Name",
+        "email": "your.email@example.com",
+        "subject": "Subject",
+        "message": "How can we help you?"
+      },
+      "button": "Send Message",
+      "success": "Message Sent!",
+      "successDescription": "Thank you for contacting us. We'll get back to you shortly."
+    },
+    "info": {
+      "title": "Contact Information",
+      "location": {
+        "title": "Our Location",
+        "address": "123 Tech Street, Digital City\nNew York, NY 10001"
+      },
+      "email": {
+        "title": "Email Us",
+        "addresses": "info@logictech.com\nsupport@logictech.com"
+      },
+      "phone": {
+        "title": "Call Us",
+        "numbers": "+1 (123) 456-7890\n+1 (987) 654-3210"
+      },
+      "hours": {
+        "title": "Office Hours",
+        "weekdays": "Monday - Friday",
+        "weekdaysTime": "9:00 AM - 6:00 PM",
+        "saturday": "Saturday",
+        "saturdayTime": "10:00 AM - 4:00 PM",
+        "sunday": "Sunday",
+        "sundayTime": "Closed"
+      }
+    },
+    "map": {
+      "title": "Our Location",
+      "description": "Find us at our convenient downtown location."
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "description": "Find answers to common questions about our services and courses."
+    }
+  },
+  "search": {
+    "placeholder": "Search the site...",
+    "results": "Search Results",
+    "noResults": "No results found for",
+    "searching": "Searching...",
+    "searchSite": "Search site"
+  }
+}
